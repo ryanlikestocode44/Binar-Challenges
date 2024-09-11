@@ -1,15 +1,53 @@
+:root {
+  --heading: #F1F3FF;
+  --btn-font-weight: 600;
+  --btn-color: white;
+  --btn-bg: #5CB85F;
+  --btn-hover-bg: #449b47;
+  --btn-hover-color: white;
+  --btn-focus-shadow-rgb: #377f3a;
+  --btn-active-color: white;
+  --btn-active-bg: #377f3a;
+  --primary: #0D28A6;
+}
+
 .bg-heading {
-  background-color: #F1F3FF;
+  background-color: var(--heading);
+}
+
+.btn-button {
+  background-color: var(--btn-bg);
+  font-weight: var(--btn-font-weight);
+  color: var(--btn-color);
+  border-radius: .25rem;
+  border: none;
+  padding: 0 1rem;
+}
+.btn-button:hover {
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-color);
+}
+.btn-button:active {
+  background-color: var(--btn-active-bg);
+  color: var(--btn-active-color);
+}
+.btn-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(var(--btn-focus))
+}
+
+.mb-7 {
+  margin-bottom: 6rem;
 }
 
 .ms-n5 {
   margin-left: -4rem;
 }
 
-.bg-button {
-  background-color: #5CB85F;
-}
 
 .ms-50 {
   margin-left: 5rem;
+}
+
+.w-6 {
+  width: 6%;
 }
