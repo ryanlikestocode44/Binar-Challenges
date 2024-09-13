@@ -54,3 +54,8 @@
 .w-6 {
   width: 6%;
 }
+
+.accordion-item:focus {
+  outline: none;
+  box-shadow: none;
+}
