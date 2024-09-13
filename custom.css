@@ -11,6 +11,9 @@
   --primary: #0D28A6;
 }
 
+.bg-cs-primary {
+  background-color: var(--primary);
+}
 .bg-heading {
   background-color: var(--heading);
 }
