@@ -46,6 +46,9 @@
 .mb-7 {
   margin-bottom: 6rem;
 }
+.mt-7 {
+  margin-top: 6rem;
+}
 
 .ms-n5 {
   margin-left: -4rem;
@@ -57,4 +60,8 @@
 
 .w-6 {
   width: 6%;
+}
+
+.w-10 {
+  width: 10%;
 }
