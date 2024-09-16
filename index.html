@@ -27,10 +27,10 @@
 						<span class="fs-4 text-primary fw-bold">BINAR RENTAL</span>
 					</a>
 					<ul class="nav nav-pills d-flex gap-3">
-						<li class="nav-item"><a href="#" class="nav-link text-black">Our Services</a></li>
-						<li class="nav-item"><a href="#" class="nav-link text-black">Why Us</a></li>
-						<li class="nav-item"><a href="#" class="nav-link text-black">Testimonial</a></li>
-						<li class="nav-item"><a href="#" class="nav-link text-black">FAQ</a></li>
+						<li class="nav-item"><a href="#ourServices" class="nav-link text-black">Our Services</a></li>
+						<li class="nav-item"><a href="#whyUs" class="nav-link text-black">Why Us</a></li>
+						<li class="nav-item"><a href="#testimonial" class="nav-link text-black">Testimonial</a></li>
+						<li class="nav-item"><a href="#faq" class="nav-link text-black">FAQ</a></li>
 						<button type="button" class="btn-button">Register</button>
 					</ul>
 				</nav>
@@ -51,7 +51,7 @@
 	</header>
 
 	<main>
-		<section class="container mb-7" id="whyUs">
+		<section class="container mb-7" id="ourServices">
 			<article class="d-flex align-items-center justify-content-between ps-5 w-100">
 				<div class="col-md-7 order-md-2 text-black ps-7" style="width: 60%;">
 					<h3 class="featurette-heading fw-bold lh-base mb-4">
@@ -88,12 +88,12 @@
 			</article>
 		</section>
 
-		<section class="container py-5" id="featured-3">
+		<section class="container py-5" id="whyUs">
 			<h3 class="pb-2 fw-bold text-black">Why Us?</h3>
 			<p class="fs-6 fw-normal">Mengapa harus pilih Binar Car Rental?</p>
 
-			<div class="row g-4 py-5 row-cols-1 row-cols-lg-4 gap-4 justify-content-center">
-			  <div class="feature col p-4 border rounded-3 w-25">
+			<div class="row py-5 row-cols-1 row-cols-lg-4 ps-2 justify-content-between flex-wrap">
+			  <div class="feature col p-4 border rounded-3 w-24">
 					<div class="feature-icon d-inline-flex align-items-center mb-3">
 						<img src="img/icon_complete.png" alt="Complete Icon" class="w-25">
 					</div>
@@ -101,7 +101,7 @@
 					<p class="fs-6">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</>
 			  </div>
 
-			  <div class="feature col p-4 border rounded-3 w-25">
+			  <div class="feature col p-4 border rounded-3 w-24">
 					<div class="feature-icon d-inline-flex align-items-center mb-3">
 						<img src="img/icon_price.png" alt="Price Icon" class="w-25">
 					</div>
@@ -109,7 +109,7 @@
 					<p class="fs-6">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
 			  </div>
 
-			  <div class="feature col p-4 border rounded-3 w-25">
+			  <div class="feature col p-4 border rounded-3 w-24">
 					<div class="feature-icon d-inline-flex align-items-center mb-3">
 						<img src="img/icon_24hrs.png" alt="24Hours Icon" class="w-25">
 					</div>
@@ -117,7 +117,7 @@
 					<p class="fs-6">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
 			  </div>
 
-			  <div class="feature col p-4 border rounded-3 w-25">
+			  <div class="feature col p-4 border rounded-3 w-24">
 					<div class="feature-icon d-inline-flex align-items-center mb-3">
 						<img src="img/icon_professional.png" alt="Profesional Icon" class="w-25">
 					</div>
@@ -127,7 +127,7 @@
 			</div>
 		</section>
 
-		<section class="container mb-7">
+		<section class="container mb-7" id="testimonial">
 			<div class="px-4 my-5 text-center mb-5">
 				<h3 class="pb-2 fw-bold text-black">Testimonial</h3>
 				<div class="col-lg-6 mx-auto">
@@ -135,36 +135,154 @@
 				</div>
 			</div>
 
-			<div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin-top: 12rem;">
-				<div class="carousel">
-				  <div class="carousel-item active" data-bs-interval="10000">
-					<div class="carousel-caption d-md-block">
-						
-					</div>
-				  </div>
-				  <div class="carousel-item" data-bs-interval="2000">
-					<div class="carousel-caption d-none d-md-block">
-					  <h5>Second slide label</h5>
-					  <p>Some representative placeholder content for the second slide.</p>
-					</div>
-				  </div>
-				  <div class="carousel-item">
-					<div class="carousel-caption d-none d-md-block">
-					  <h5>Third slide label</h5>
-					  <p>Some representative placeholder content for the third slide.</p>
-					</div>
-				  </div>
-				</div>
+			<!-- Carousel wrapper -->
+			<article
+				id="carouselExample"
+				class="carousel slide text-center carousel-dark w-75 h-100 mx-auto"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active bg-body-secondary rounded-3">
+						<div class="carousel-item__body">
+							<div class="row d-flex align-items-center justify-content-center gap-4 py-5">
+								<img
+									class="rounded-circle shadow-1-strong"
+									src="img/rates1.jpg"
+									alt="avatar"
+									style="width: 115px; height: 95px;"
+								/>
+								<div class="col-lg-6">
+									<ul class="list-unstyled d-flex text-warning mb-1 gap-1">
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="far fa-star fa-md"></i></li>
+									</ul>
 
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  <span class="visually-hidden">Previous</span>
+									<p class="text-start w-100 mb-3">
+										&quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+										nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+										fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+										doloremque.&quot;
+									</p>
+									<h6 class="text-start fw-semibold fs-6">Abdullah Hasan, Bandung</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item bg-body-secondary rounded-3">
+						<div class="carousel-item__body">
+							<div class="row d-flex align-items-center justify-content-center gap-4 py-5">
+								<img
+									class="rounded-circle shadow-1-strong"
+									src="img/rates2.jpg"
+									alt="avatar"
+									style="width: 115px; height: 95px;"
+								/>
+								<div class="col-lg-6">
+									<ul class="list-unstyled d-flex text-warning mb-1 gap-1">
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+									</ul>
+
+									<p class="text-start w-100 mb-3">
+										&quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+										nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+										fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+										doloremque.&quot;
+									</p>
+									<h6 class="text-start fw-semibold fs-6">Muhammad Zidan, Jakarta</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item bg-body-secondary rounded-3">
+						<div class="carousel-item__body">
+							<div class="row d-flex align-items-center justify-content-center gap-4 py-5">
+								<img
+									class="rounded-circle shadow-1-strong"
+									src="img/rates3.jpg"
+									alt="avatar"
+									style="width: 115px; height: 95px;"
+								/>
+								<div class="col-lg-6">
+									<ul class="list-unstyled d-flex text-warning mb-1 gap-1">
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="far fa-star fa-md"></i></li>
+									</ul>
+
+									<p class="text-start w-100 mb-3">
+										&quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+										nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+										fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+										doloremque.&quot;
+									</p>
+									<h6 class="text-start fw-semibold fs-6">Maleachi Zhen, Bogor</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item bg-body-secondary rounded-3">
+						<div class="carousel-item__body">
+							<div class="row d-flex align-items-center justify-content-center gap-4 py-5">
+								<img
+									class="rounded-circle shadow-1-strong"
+									src="img/rates3.jpg"
+									alt="avatar"
+									style="width: 115px; height: 95px;"
+								/>
+								<div class="col-lg-6">
+									<ul class="list-unstyled d-flex text-warning mb-1 gap-1">
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="fas fa-star fa-md"></i></li>
+										<li><i class="far fa-star fa-md"></i></li>
+									</ul>
+
+									<p class="text-start w-100 mb-3">
+										&quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+										nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+										fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+										doloremque.&quot;
+									</p>
+									<h6 class="text-start fw-semibold fs-6">Maleachi Zhen, Bogor</h6>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExample"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  <span class="visually-hidden">Next</span>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExample"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
 				</button>
-			</div>  
+			</article>
+			<!-- Carousel wrapper -->
 		</section>
 
 
@@ -183,7 +301,7 @@
 		</section>
 
 
-		<section class="container">
+		<section class="container" id="faq">
 			<article class="row align-items-md-stretch">
 				<div class="col-md-6">
 					<div class="h-100 p-5 pt-0 rounded-3">
@@ -195,16 +313,16 @@
 				<div class="col-md-6">
 					<div class="row accordion gap-3" id="accordionExample">
 						<div class="accordion-item rounded px-1 border-top">
-						  <h2 class="accordion-header">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<h2 class="accordion-header">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 								Apa saja syarat yang dibutuhkan?
-							</button>
-						  </h2>
-						  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
+							  </button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus et cumque autem eaque ea saepe perferendis deserunt quibusdam quisquam voluptates, amet blanditiis repellat dolor. Similique nemo vero voluptates voluptatum distinctio laboriosam necessitatibus veniam dolore ea inventore harum neque labore magnam, aliquam quisquam ipsum illo modi debitis. Eius sint omnis consequatur nemo a minus blanditiis reprehenderit assumenda minima ipsam commodi suscipit doloremque tempore veritatis, quo impedit sunt quisquam fuga libero nobis, eaque ullam. Nostrum pariatur repellat suscipit reiciendis sequi ad, laboriosam est porro placeat perferendis, incidunt, error maiores distinctio ratione repudiandae eveniet harum? Dignissimos incidunt minus porro iste ipsum excepturi in.
+							  </div>
 							</div>
-						  </div>
 						</div>
 						
 						<div class="accordion-item rounded px-1 border-top">
@@ -235,27 +353,27 @@
 
 						<div class="accordion-item rounded px-1 border-top">
 						  <h2 class="accordion-header">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-								Apakah ada biaya antar-jemput?
-							</button>
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									Apakah ada biaya antar-jemput?
+								</button>
 						  </h2>
 						  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla odio aut, quae modi aspernatur tenetur cupiditate! Perspiciatis laborum ipsam nulla sed ducimus facilis molestias, maxime, quia, impedit maiores fuga ex! Nam assumenda sit recusandae corrupti minus. Eius distinctio provident iure culpa facere sed veniam eligendi adipisci ex asperiores, id ea ipsa doloribus, maxime atque ducimus maiores voluptates odit commodi, dolore qui consequatur. Ex autem quam officiis quidem odio porro accusamus quis veritatis tempora cupiditate vel quisquam ea, esse animi repellendus ducimus ab! Unde, autem nam.
-							</div>
+								<div class="accordion-body">
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla odio aut, quae modi aspernatur tenetur cupiditate! Perspiciatis laborum ipsam nulla sed ducimus facilis molestias, maxime, quia, impedit maiores fuga ex! Nam assumenda sit recusandae corrupti minus. Eius distinctio provident iure culpa facere sed veniam eligendi adipisci ex asperiores, id ea ipsa doloribus, maxime atque ducimus maiores voluptates odit commodi, dolore qui consequatur. Ex autem quam officiis quidem odio porro accusamus quis veritatis tempora cupiditate vel quisquam ea, esse animi repellendus ducimus ab! Unde, autem nam.
+								</div>
 						  </div>
 						</div>
 
 						<div class="accordion-item rounded px-1 border-top">
 						  <h2 class="accordion-header">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-								Bagaimana jika terjadi kecelakaan?
-							</button>
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									Bagaimana jika terjadi kecelakaan?
+								</button>
 						  </h2>
 						  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur laborum alias beatae quod molestias odio vero aliquam praesentium harum? Enim dolore alias recusandae fuga sequi sit officiis tenetur tempora in, cumque nisi magnam porro sed maiores, dolorem ducimus quo! Quas necessitatibus consectetur laboriosam recusandae fugiat consequatur saepe adipisci optio quia totam, ullam temporibus unde cum distinctio voluptate perspiciatis maiores ratione architecto impedit ad! Eaque, incidunt. Quis esse eius assumenda itaque ea porro quibusdam illum odio aspernatur aliquid, laudantium natus quasi deserunt maxime temporibus. Quia ad itaque magnam illum aliquam nobis ab ea, sed, unde, commodi asperiores saepe reiciendis. Similique.
-							</div>
+								<div class="accordion-body">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur laborum alias beatae quod molestias odio vero aliquam praesentium harum? Enim dolore alias recusandae fuga sequi sit officiis tenetur tempora in, cumque nisi magnam porro sed maiores, dolorem ducimus quo! Quas necessitatibus consectetur laboriosam recusandae fugiat consequatur saepe adipisci optio quia totam, ullam temporibus unde cum distinctio voluptate perspiciatis maiores ratione architecto impedit ad! Eaque, incidunt. Quis esse eius assumenda itaque ea porro quibusdam illum odio aspernatur aliquid, laudantium natus quasi deserunt maxime temporibus. Quia ad itaque magnam illum aliquam nobis ab ea, sed, unde, commodi asperiores saepe reiciendis. Similique.
+								</div>
 						  </div>
 						</div>
 					</div>
@@ -268,9 +386,9 @@
 	<footer>
 		<section class="container">
 			<article class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top gap-5">
-				<div class="col mb-3">
+				<div class="col mb-3 me-0">
 					<ul class="nav flex-column">
-						<li class="nav-item mb-2 pe-0"><a href="#" class="nav-link p-0 text-body-secondary">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</a></li>
 						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">binarcarrental@gmail.com</a></li>
 						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">081-233-334-808</a></li>
 					</ul>
@@ -329,7 +447,6 @@
 			</article>
 		</section>
 	</footer>
-	</div>
 	<script src='bootstrap/js/bootstrap.min.js'></script>
 	<script src="https://kit.fontawesome.com/3b50790b29.js" crossorigin="anonymous"></script>
 </body>
