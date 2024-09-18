@@ -46,35 +46,49 @@
 .mb-7 {
   margin-bottom: 6rem;
 }
-.mt-7 {
-  margin-top: 6rem;
+
+.w-9 {
+  width: 9%;
 }
 
-.ms-n5 {
-  margin-left: -4rem;
+
+@media (min-width: 0px) {
+  button.control {
+    height: 50%;
+  }
+
+  #home #title {
+    width: 80%;
+    font-size: 2.5rem;
+  }
+
+  #ourServices #title {
+    font-size: 1.75rem;
+  }
+
+  #whyUs #title {
+    font-size: 1.75rem;
+  }
+
+  #testimonial #title {
+    font-size: 1.75rem;
+  }
+
+  #faq #title {
+    font-size: 1.7rem
+  }
 }
 
-.ps-7 {
-  padding-left: 7rem;
+@media (min-width: 576px) {
+  #carouselExample {
+    width: 75%;
+    padding: 30px 0;
+  }
 }
 
-.w-6 {
-  width: 6%;
-}
 
-.w-10 {
-  width: 10%;
+@media (min-width: 992px) {
+  button.control {
+    height: 100%;
+  }
 }
-
-.fs-7 {
-  font-size: 0.75rem;
-}
-
-.w-24 {
-  width: 24%;
-}
-
-.w-cover {
-  width: 620px;
-}
-
