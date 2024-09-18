@@ -3,14 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Binar Car Rental</title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="custom.css">
+	<link rel="shortcut icon" href="img/car-rental-favicon.png" type="image/x-icon">
 </head>
 <body class="overflow-x-hidden">
 	<header class="bg-heading">
 		<nav class="navbar navbar-expand-lg">
-			<div class="container">
+			<div class="navbar__container container">
 				<a class="navbar-brand" href="#">
 					<span class="fs-4 text-primary fw-bold">BINAR RENTAL</span>
 				</a>
@@ -54,41 +55,44 @@
 			</div>
 		</nav>
 		
-		<section class="pt-md-5 mt-4 mt-xl-0" id="home">
-			<div class="container h-100 d-flex pt-lg-0 pt-md-5">
-				<div class="row d-flex justify-content-center align-items-center">
-					<div class="col-md-6 tagline pb-5 pt-md-4">
+		<section class="home__section pt-md-5 mt-4 mt-xl-0">
+			<article class="home__container container h-100 d-flex pt-lg-0 pt-md-5">
+				<div class="home__content row d-flex justify-content-center align-items-center">
+					<div class="home__header col-md-6 tagline pb-5 pt-md-4">
 						<h2 class="text-body-emphasis fw-bold mb-4 w-100" id="title">Sewa &amp; rental mobil terbaik di kawasan Bekasi</h2>
 						<p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
 						</p>
 						<a href="#" class="btn btn-success">Mulai Sewa Mobil</a>
 					</div>
 
-					<div class="col-md-6 pe-0 pb-sm-5 pb-md-0">
+					<div class="home__image col-md-6 pe-0 pb-sm-5 pb-md-0">
 						<div class="h-100" id="carImg">
 							<img src="img/car.png" alt="Car Image" class="w-100">
 						</div>
 					</div>
 				</div>
-			</div>
+			</art>
 		</section>
 	</header>
 	
 	<main>
-		<section class="py-5" id="ourServices">
-			<div class="container">
-				<div class="row align-items-md-stretch justify-content-center ps-lg-5">
+		<section class="services__section py-5" id="ourServices">
+			<article class="services__container container">
+				<div class="services__content row align-items-md-stretch justify-content-center ps-lg-5">
 					<div class="col-md-6 col-lg-5">
-						<div class="h-100 d-md-flex align-items-md-center d-lg-block align-items-lg-start">
+						<div class="services__image h-100 d-md-flex align-items-md-center d-lg-block align-items-lg-start">
 							<img src="img/service.png" class="w-100">
 						</div>
 					</div>
+
 					<div class="col-md-6 d-flex justify-content-start mx-auto align-items-start flex-column mb-5 mt-4 ps-lg-5">
-						<h2 class="text-body-emphasis fw-bold ms-1 mb-4" id="title">Best Car Rental for any kind of trip in Bekasi!</h2>
-						<p class="ms-1">Sewa mobil di Bekasi bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang
-							lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis,
-							wedding, meeting, dll.</p>
-						<ul class="d-flex flex-column gap-3 list-unstyled ps-0">
+						<div class="services__header">
+							<h2 class="text-body-emphasis fw-bold ms-1 mb-4" id="title">Best Car Rental for any kind of trip in Bekasi!</h2>
+							<p class="ms-1">Sewa mobil di Bekasi bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang
+								lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis,
+								wedding, meeting, dll.</p>
+						</div>
+						<ul class="services__main d-flex flex-column gap-3 list-unstyled ps-0">
 							<li class="d-flex align-items-center gap-3">
 								<img src="img/check.png" alt="Circle Check Icon" class="w-9 object-fit-contain">
 								<p class="m-0">Sewa Mobil Dengan Supir di Bekasi 12 Jam</p>
@@ -110,19 +114,19 @@
 								<p class="m-0">Layanan Airport Transfer / Drop In Out</p>
 							</li>
 						</ul>
-					</div>
+					</ar>
 				</div>
-			</div>
+			</article>
 		</section>
 
-		<section class="container px-1" id="whyUs">
-      <div class="pb-5">
-        <div class="container">
+		<section class="why-us__section px-1" id="whyUs">
+      <article class="why-us__container container pb-4">
+        <div class="why-us__header">
 					<div class="text-lg-start text-center">
 						<h2 class="text-body-emphasis fw-bold mb-4" id="title">Why Us?</h2>
 						<p>Mengapa harus pilih Binar Car Rental?</p>
 					</div>
-          <div class="row">
+          <div class="why-us__main row">
             <div class="col-12 col-sm-6 col-md-3 my-2">
               <div class="card">
                 <div class="card-body yellow">
@@ -170,18 +174,18 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
 		</section>
 
-		<section class="container mb-7" id="testimonial">
-			<div class="py-5 text-center">
+		<section class="testimonial__section container mb-7" id="testimonial">
+			<div class="testimonial__header py-5 text-center">
 				<h3 class="pb-2 fw-bold text-black" id="title">Testimonial</h3>
 				<p class="fs-6">Berbagai review positif dari para pelanggan kami</p>
 			</div>
 			<!-- Carousel wrapper -->
 			<article
 				id="carouselExample"
-				class="carousel slide text-center carousel-dark h-100 mx-auto py-0 px-md-0 px-lg-5 bg-body-secondary"
+				class="testimonial__carousel carousel slide text-center carousel-dark h-100 mx-auto py-0 px-md-0 px-lg-5 bg-body-secondary"
 			>
 				<div class="carousel-inner">
 					<div class="carousel-item active rounded-3 px-5">
@@ -328,8 +332,8 @@
 			<!-- Carousel wrapper -->
 		</section>
 
-		<section class="container mb-7">
-			<div class="p-5 text-center bg-cs-primary rounded-3 d-flex flex-column align-items-center">
+		<section class="sewa__section container mb-7" id="sewa">
+			<article class="sewa__content p-5 text-center bg-cs-primary rounded-3 d-flex flex-column align-items-center">
 				<h1 class="text-white fw-bold mb-4">Sewa Mobil di Bekasi Sekarang</h1>
 				<p class="col-lg-8 lead mx-auto fs-6 text-white mb-5">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -339,18 +343,18 @@
 					Mulai Sewa Mobil
 				  </button>
 				</div>
-			</div>
+			</article>
 		</section>
 
 
-		<section class="container py-5 mb-5" id="faq">
-			<article>
+		<section class="faq__section container py-5 mb-5" id="faq">
+			<article class="faq__content">
 				<div class="row">
-					<div class="col-md-6 text-lg-start text-center mb-3 mb-md-0">
+					<div class="faq__header col-md-6 text-lg-start text-center mb-3 mb-md-0">
 						<h2 class="fw-bold text-lg-start text-center" id="title">Frequently Asked Question</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 					</div>
-					<div class="col-md-6 px-4">
+					<div class="faq__main col-md-6 px-4">
 						<div class="row accordion gap-3" id="accordionExample">
 							<div class="accordion-item rounded px-1 border-top">
 								<h2 class="accordion-header">
@@ -424,9 +428,9 @@
 	</main>
 
 	<footer>
-		<section class="container py-5">
-			<article class="row gap-2">
-				<div class="col-md-4">
+		<section class="footer__container container py-5">
+			<article class="footer__navs row gap-2">
+				<div class="footer__first-nav col-md-4">
 					<ul class="nav flex-column gap-2">
 						<li class="nav-item mb-2">
 							<a href="#" class="nav-link p-0 text-black fw-light">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</a>
@@ -440,7 +444,7 @@
 					</ul>
 				</div>
 		
-				<div class="col-md-2">
+				<div class="footer__second-nav col-md-2">
 					<ul class="nav flex-column gap-2">
 						<li class="nav-item mb-2"><a href="#ourServices" class="nav-link p-0 text-black">Our Services</a></li>
 						<li class="nav-item mb-2"><a href="#whyUs" class="nav-link p-0 text-black">Why Us</a></li>
@@ -449,7 +453,7 @@
 					</ul>
 				</div>
 
-				<div class="col-md-2 me-5">
+				<div class="footer__third-nav col-md-2 me-5">
 					<h2 class="fw-normal fs-6 mb-3">Connect with us</h2>
 					<ul class="d-flex gap-1 list-unstyled">
 						<li>
@@ -480,7 +484,7 @@
 					</ul>
 				</div>
 
-				<div class="col-md-3">
+				<div class="footer__fourth-nav col-md-3">
 					<ul class="nav flex-column">
 						<li class="nav-item mb-2">Copyright Binar 2022</li>
 						<li class="nav-item mb-2">
@@ -493,6 +497,7 @@
 			</article>
 		</section>
 	</footer>
+	
 	<script src='bootstrap/js/bootstrap.min.js'></script>
 	<script src="https://kit.fontawesome.com/3b50790b29.js" crossorigin="anonymous"></script>
 </body>
