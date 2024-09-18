@@ -86,9 +86,12 @@
   }
 }
 
-
 @media (min-width: 992px) {
   button.control {
     height: 100%;
+  }
+
+  #carImg {
+    width: 112%;
   }
 }
