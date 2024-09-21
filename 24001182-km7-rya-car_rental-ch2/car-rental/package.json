@@ -1,0 +1,11 @@
+{
+  "name": "car-rental",
+  "version": "1.0.0",
+  "description": "node.js installation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "ryan",
+  "license": "ISC"
+}

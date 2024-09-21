@@ -1,0 +1,97 @@
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+:root {
+  --heading: #F1F3FF;
+  --btn-font-weight: 600;
+  --btn-color: white;
+  --btn-bg: #5CB85F;
+  --btn-hover-bg: #449b47;
+  --btn-hover-color: white;
+  --btn-focus-shadow-rgb: #377f3a;
+  --btn-active-color: white;
+  --btn-active-bg: #377f3a;
+  --primary: #0D28A6;
+}
+
+.bg-cs-primary {
+  background-color: var(--primary);
+}
+.bg-heading {
+  background-color: var(--heading);
+}
+
+.btn-button {
+  background-color: var(--btn-bg);
+  font-weight: var(--btn-font-weight);
+  color: var(--btn-color);
+  border-radius: .25rem;
+  border: none;
+  padding: 0 1rem;
+}
+
+.btn-button:hover {
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-color);
+}
+
+.btn-button:active {
+  background-color: var(--btn-active-bg);
+  color: var(--btn-active-color);
+}
+
+.btn-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(var(--btn-focus))
+}
+
+.mb-7 {
+  margin-bottom: 6rem;
+}
+
+.w-9 {
+  width: 9%;
+}
+
+
+@media (min-width: 0px) {
+  button.control {
+    height: 50%;
+  }
+
+  #home #title {
+    width: 80%;
+    font-size: 2.5rem;
+  }
+
+  #ourServices #title {
+    font-size: 1.75rem;
+  }
+
+  #whyUs #title {
+    font-size: 1.75rem;
+  }
+
+  #testimonial #title {
+    font-size: 1.75rem;
+  }
+
+  #faq #title {
+    font-size: 1.7rem
+  }
+}
+
+@media (min-width: 576px) {
+  #carouselExample {
+    width: 75%;
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  button.control {
+    height: 100%;
+  }
+
+  #carImg {
+    width: 112%;
+  }
+}
