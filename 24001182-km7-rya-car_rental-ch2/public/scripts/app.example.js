@@ -11,7 +11,7 @@ class App {
   }
 
   // Initialize the buttons
-  async init() {
+  async init () {
     await this.load();
 
     // Register click listener
