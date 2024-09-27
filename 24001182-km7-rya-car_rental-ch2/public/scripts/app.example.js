@@ -10,8 +10,10 @@ class App {
     this.search = document.getElementById("search");
   }
 
+  // Initialize the buttons
   async init() {
     await this.load();
+
     // Register click listener
     this.clearButton.onclick = this.clear;
     this.loadButton.onclick = this.run;
@@ -35,6 +37,7 @@ class App {
 
   async filterCar() {
     const filteredCars = await Binar.listCars((car) => {
+      // Debug filteredCars
       console.log("Cars Data");
       console.log(`Driver type: ${this.driver.value}`);
       console.log(`Date: ${this.date.value}`);
@@ -48,15 +51,12 @@ class App {
       const dateTime = new Date(dateTimeString).getTime();
 
       const selectedPassenger = parseInt(this.passenger.value) || 0;
-
+      
       console.log(`Passenger: ${selectedPassenger}`);
 
       if (selectedPassenger !== "" || selectedPassenger !== "0") {
         const availableDate = new Date(car.availableAt).getTime();
-        const cars =
-          car.capacity >= selectedPassenger &&
-          car.available === true &&
-          availableDate >= dateTime;
+        const cars = car.capacity >= selectedPassenger && car.available === true && availableDate >= dateTime;
         return cars;
       } else {
         const cars = car.available === true && availableDate >= dateTime;
