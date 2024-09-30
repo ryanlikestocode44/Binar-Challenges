@@ -27,7 +27,7 @@ class Binar {
       const cacheCars = JSON.parse(cachedCarsString);
       cars = this.populateCars(cacheCars);
     } else {
-      const response = await fetch("../../data/cars.min.json");
+      const response = await fetch("../data/cars.min.json");
       const body = await response.json();
       cars = this.populateCars(body)
 
