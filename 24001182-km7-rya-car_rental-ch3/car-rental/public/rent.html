@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Binar Car Rental</title>
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="./css/custom.css" />
+		<link rel="shortcut icon" href="./images/home/car-rental-favicon.png" type="image/x-icon">
+	</head>
+	<body class="overflow-x-hidden" style>
+		<header class="bg-image">
+			<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+				<div class="navbar__container container">
+					<a class="navbar-brand" href="index.html">
+						<span class="fs-4 text-primary fw-bold">BINAR RENTAL</span>
+					</a>
+					<button 
+						class="btn d-md-none"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasExample"
+						aria-controls="offcanvasExample"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="offcanvas offcanvas-end w-50" tabindex="1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+						<div class="offcanvas-header">
+							<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav ms-auto d-flex gap-3">
+								<li class="nav-item">
+									<a class="nav-link text-white active" aria-current="page" href="http://127.0.0.1:5500/24001182-km7-rya-car_rental-ch2/car-rental/public/index.html#ourServices">Our Services</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="http://127.0.0.1:5500/24001182-km7-rya-car_rental-ch2/car-rental/public/index.html#whyUs">Why Us</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="http://127.0.0.1:5500/24001182-km7-rya-car_rental-ch2/car-rental/public/index.html#testimonial">Testimonial</a>
+								</li>
+								<li class="nav-item ">
+									<a class="nav-link text-white tes" href="http://127.0.0.1:5500/24001182-km7-rya-car_rental-ch2/car-rental/public/index.html#faq">FAQ</a>
+								</li>
+								<li class="nav-item">
+									<button type="button" class="btn btn-button py-2 px-3">Register</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+	
+			<section class="container mt-5 mb-4 pt-2 pb-5">
+				<div class="row">
+					<div class="col-md-6 text-center text-white mb-3 mb-md-0 w-100">
+						<h2 class="fw-bold" id="title">Sewa &amp; rental mobil terbaik di kawasan Bekasi</h2>
+						<p class="fs-4">Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+					</div>
+				</div>
+			</section>
+		</header>
+
+		<main class="py-2 mb-5">
+			<section class="container">
+				<div class="container mb-4 d-flex gap-3">
+					<button class="btn btn-success px-4" id="clear-btn">Clear</button>
+					<button class="btn btn-success px-4" id="load-btn">Load</button>
+				</div>
+
+				<article class="rent-input__card card">
+					<div class="card-body">
+						<div class="d-flex justify-content-center align-items-center py-2">
+							<div class="row">
+								<div class="col-lg">
+									<label for="driver" class="fw-semibold mb-1">Tipe Driver</label>
+									<select class="form-select" id="driver" aria-placeholder="Pilih Tipe Driver">
+										<option hidden selected class="fw-light">Pilih Tipe Driver</option>
+										<option value="1">Dengan Sopir</option>
+										<option value="1">Tanpa Sopir (Lepas Kunci)</option>
+									</select>
+								</div>
+
+								<div class="col-lg m-auto">
+									<label for="date" class="fw-semibold mb-1">Tanggal</label>
+									<input type="date" class="form-control" placeholder="Pilih Tanggal" id="date" />
+								</div>
+
+								<div class="col">
+									<label for="time" class="fw-semibold mb-1">Waktu Jemput/Ambil</label>
+									<select class="form-select" id="time" aria-placeholder="MM/DD/YYYY">
+										<option hidden>Pilih waktu</option>
+										<option value="08:00" class="mb-2">08.00 WIB</option>
+										<option value="09:00" class="mb-2">09.00 WIB</option>
+										<option value="10:00" class="mb-2">10.00 WIB</option>
+										<option value="11:00" class="mb-2">11.00 WIB</option>
+										<option value="12:00" class="mb-2">12.00 WIB</option>
+									</select>
+								</div>
+
+								<div class="col-lg-3">
+									<label for="passenger" class="fw-semibold mb-1">Jumlah Penumpang (Optional)</label>
+									<div class="input-group">
+										<input type="number" min="1" class="form-control" aria-label="Username" placeholder="Cth. 1" aria-describedby="basic-addon1" id="passenger">
+										<span class="input-group-text bg-white">
+											<img src="images/rent/users.png" width="20px" alt="Users Logo" />
+										</span>
+									</div>
+								</div>
+								
+								<div class="col d-flex align-items-end">
+									<button class="btn btn-button mt-3 px-3 py-2" id="search" disabled>Cari Mobil</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<div class="container">
+					<div class="car__cards row justify-content-center" id="cars-container">
+					<!-- 
+						<div class="card m-3">
+							<img src="./images/car01.min.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">${this.manufacture} ${this.model}</h5>
+								<h4 class="fw-bold">Rp. ${this.rentPerDay}</h4>
+								<p class="card-text">${this.description}</p>
+								<div class="row mb-2">
+										<div class="col-1 cars-item-icon">
+											<img src="images/fi_users.png" alt="" srcset="" />
+										</div>
+										<div class="col-lg">${this.capacity} orang</div>
+								</div>
+								<div class="row mb-2">
+										<div class="col-1">
+											<img src="images/gear.png" alt="" srcset="" />
+										</div>
+										<div class="col-lg">${this.transmission}</div>
+								</div>
+								<div class="row mb-2">
+										<div class="col-1">
+											<img src="images/fi_calendar.png" alt="" srcset="" />
+										</div>
+										<div class="col-lg">tahun ${this.year}</div>
+								</div>
+							</div>
+					</div> 
+					-->
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<section class="footer__container container py-5">
+				<article class="footer__navs row gap-2">
+					<div class="footer__first-nav col-md-4">
+						<ul class="nav flex-column gap-2">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-black fw-light">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-black fw-light">binarcarrental@gmail.com</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-black fw-light">081-233-334-808</a>
+							</li>
+						</ul>
+					</div>
+			
+					<div class="footer__second-nav col-md-2">
+						<ul class="nav flex-column gap-2">
+							<li class="nav-item mb-2">
+								<a href="http://127.0.0.1:5500/24001182-km7-rya-car_rental-ch2/car-rental/public/index.html#ourServices" class="nav-link p-0 text-black">Our Services</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="http://127.0.0.1:5500/24001182-km7-rya-car_rental-ch2/car-rental/public/index.html#whyUs" class="nav-link p-0 text-black">Why Us</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="http://127.0.0.1:5500/24001182-km7-rya-car_rental-ch2/car-rental/public/index.html#testimonial" class="nav-link p-0 text-black">Testimonial</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="http://127.0.0.1:5500/24001182-km7-rya-car_rental-ch2/car-rental/public/index.html#faq" class="nav-link p-0 text-black">FAQs</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__third-nav col-md-2 me-5">
+						<h2 class="fw-normal fs-6 mb-3">Connect with us</h2>
+						<ul class="d-flex gap-1 list-unstyled">
+							<li>
+								<a class="contact-icon text-body-secondary" href="#">
+									<img class="w-75" src="images/home/icon_facebook.png" alt="Facebook Icon">
+								</a>
+							</li>
+							<li>
+								<a class="contact-icon text-body-secondary" href="#">
+									<img class="w-75" src="images/home/icon_instagram.png" alt="Instagram Icon">
+								</a>
+							</li>
+							<li>
+								<a class="contact-icon text-body-secondary" href="#">
+									<img class="w-75" src="images/home/icon_twitter.png" alt="Twitter Icon">
+								</a>
+							</li>
+							<li>
+								<a class="contact-icon text-body-secondary" href="#">
+									<img class="w-75" src="images/home/icon_mail.png" alt="Email Icon">
+								</a>
+							</li>
+							<li>
+								<a class="contact-icon text-body-secondary" href="#">
+									<img class="w-75" src="images/home/icon_twitch.png" alt="Twitch Icon">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__fourth-nav col-md-3">
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">Copyright Binar 2022</li>
+							<li class="nav-item mb-2">
+								<a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+									<span class="fs-4 text-primary fw-bold">BINAR RENTAL</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+		</footer>
+		<script src="./scripts/app.example.js"></script>
+		<script src="./scripts/binar.js"></script>
+		<script src="./scripts/car.example.js"></script>
+		<script src="./scripts/main.example.js"></script>
+		<script src="./scripts/index.js"></script>
+	</body>
+</html>
