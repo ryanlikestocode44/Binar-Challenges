@@ -9,7 +9,7 @@ const userRepository = require("../repositories/users");
 
 exports.authorization =
   (...roles) =>
-  (req, res, next) => {
+  async (req, res, next) => {
     const authHeader = req.headers["authorization"];
     if (!authHeader) {
       throw new Unauthorized("Missing authorization header");
@@ -24,7 +24,7 @@ exports.authorization =
 
     const extractedToken = jwt.verify(token, process.env.JWT_SECRET);
 
-    const user = userRepository.getUserById(extractedToken.userId);
+    const user = await userRepository.getUserById(extractedToken.userId);
 
     const accessValidation = roles.includes(user.roleId);
     if (!accessValidation) {

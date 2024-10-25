@@ -9,7 +9,7 @@ exports.register = async (data, file) => {
     data.profilePicture = await imageUpload(file.profilePicture);
   }
 
-  const user = await userRepository.createUser(data);
+  const user = await userRepository.createUser(data, file);
 
   // generate token
   const token = createToken(user);

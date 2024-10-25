@@ -62,6 +62,6 @@ model users {
   name           String  @db.VarChar
   email          String  @db.VarChar
   password       String  @db.VarChar
-  profilepicture String? @db.VarChar
+  profilePicture String? @db.VarChar
   roleid         Int     @default(2)
 }
