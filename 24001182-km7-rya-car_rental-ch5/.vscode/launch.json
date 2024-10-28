@@ -7,13 +7,11 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Challenge 4",
-      "skipFiles": [
-        "<node_internals>/challenge-4"
-      ],
-      "cwd": "${workspaceFolder}",
+      "name": "Challenge - Chapter 5",
+      "skipFiles": ["<node_internals>/**"],
+      "cwd": "${workspaceFolder}/car_rental",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"], // Corrected this line
+      "runtimeArgs": ["run", "dev"]
     }
   ]
 }

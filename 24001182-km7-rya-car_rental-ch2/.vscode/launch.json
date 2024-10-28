@@ -7,9 +7,18 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Challenge - Chapter 3",
+      "name": "Challenge - Chapter 2",
       "skipFiles": ["<node_internals>/**"],
       "cwd": "${workspaceFolder}/car-rental",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Challenge - Chapter 2 - JS Array",
+      "skipFiles": ["<node_internals>/**"],
+      "cwd": "${workspaceFolder}/javascript-array-challenge",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"]
     }

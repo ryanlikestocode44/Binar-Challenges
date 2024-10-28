@@ -1,12 +1,10 @@
-# challenge-4
-Creating CRUD Models & Cars: 
-Ryan Nicholas Purba
+# challenge-5
 
-Creating CRUD Types: 
-Nabilah Zakiyah Salmaa Firdaus
+Creating Login and Register Authentication
 
-Creating CRUD Manufactures & Transmissions: 
-Ridhwan Tsalasah Putra
+Tools:
 
-Link DBDiagram: 
-https://dbdiagram.io/d/Cars-DB-670d160d97a66db9a3e9dee4
+- JWT Token
+- Prisma ORM
+- Express JS
+- Node JS
