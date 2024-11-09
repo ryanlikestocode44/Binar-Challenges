@@ -51,6 +51,10 @@ exports.getModelById = async (id) => {
     where: {
       id: id,
     },
+    include: {
+      manufactures: true,
+      transmissions: true,
+    },
   });
 
   // Konversi field BigInt ke string supaya serialization-nya aman
