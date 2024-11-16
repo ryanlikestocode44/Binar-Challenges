@@ -2,8 +2,13 @@ const carRepository = require("../repositories/cars");
 const { imageUpload } = require("../utils/image-kit");
 const { NotFoundError, InternalServerError } = require("../utils/request");
 
-exports.getAllCars = async (plate, available, availableAt) => {
-  return carRepository.getAllCars(plate, available, availableAt);
+exports.getAllCars = async (driveType, transmission, availableAt, capacity) => {
+  return carRepository.getAllCars(
+    driveType,
+    transmission,
+    availableAt,
+    capacity
+  );
 };
 
 exports.getCarById = async (id) => {

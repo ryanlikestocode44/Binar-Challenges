@@ -5,9 +5,10 @@ const { successResponse } = require("../utils/response");
 exports.getAllCars = async (req, res, next) => {
   // Dapatkan data cars dari empat parameter query dibawah
   const data = await carService.getAllCars(
-    req.query?.plate,
-    req.query?.available,
-    req.query?.availableAt
+    req.query?.driveType,
+    req.query?.transmission,
+    req.query?.availableAt,
+    req.query?.capacity
   );
 
   successResponse(res, "Successfully Get All Cars Data", data);

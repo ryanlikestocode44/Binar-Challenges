@@ -4,7 +4,7 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 // Dapatkan semua data cars
-exports.getAllCars = async (plate, available, availableAt) => {
+exports.getAllCars = async (driveType, transmission, availableAt, capacity) => {
   let query = {
     include: {
       models: {
@@ -18,21 +18,37 @@ exports.getAllCars = async (plate, available, availableAt) => {
   };
 
   let arrQuery = [];
-  if (plate) {
+  if (driveType) {
     arrQuery.push({
-      plate: { contains: plate, mode: "insensitive" },
+      models: {
+        transmissions: {
+          driveType: { contains: driveType, mode: "insensitive" },
+        },
+      },
     });
   }
 
-  if (available) {
+  if (transmission) {
     arrQuery.push({
-      available: { equals: available },
+      models: {
+        transmissions: {
+          name: { contains: name, mode: "insensitive" },
+        },
+      },
     });
   }
 
   if (availableAt) {
     arrQuery.push({
       availableAt: { gte: availableAt },
+    });
+  }
+
+  if (capacity) {
+    arrQuery.push({
+      types: {
+        capacity: { gte: parseInt(capacity, 10) },
+      },
     });
   }
 

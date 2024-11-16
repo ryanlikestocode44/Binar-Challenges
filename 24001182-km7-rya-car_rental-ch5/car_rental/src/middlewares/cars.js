@@ -6,8 +6,8 @@ exports.validateGetAllCars = (req, res, next) => {
   // Zod validation
   const validateQuery = (queries) => {
     const schema = z.object({
-      plate: z.string().optional().nullable(),
-      available: z.string().optional().nullable(),
+      driveType: z.string().optional().nullable(),
+      transmission: z.string().optional().nullable(),
       availableAt: z
         .string()
         .refine((date) => !isNaN(Date.parse(date)), {
