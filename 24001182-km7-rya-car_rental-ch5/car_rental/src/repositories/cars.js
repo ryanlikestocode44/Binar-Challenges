@@ -7,7 +7,12 @@ const prisma = new PrismaClient();
 exports.getAllCars = async (plate, available, availableAt) => {
   let query = {
     include: {
-      models: true,
+      models: {
+        include: {
+          manufactures: true,
+          transmissions: true,
+        },
+      },
       types: true,
     },
   };
