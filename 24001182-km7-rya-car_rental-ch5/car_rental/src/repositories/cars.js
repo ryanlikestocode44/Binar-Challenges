@@ -40,7 +40,7 @@ exports.getAllCars = async (driveType, transmission, availableAt, capacity) => {
 
   if (availableAt) {
     arrQuery.push({
-      availableAt: { gte: availableAt },
+      availableAt: { lte: availableAt },
     });
   }
 
