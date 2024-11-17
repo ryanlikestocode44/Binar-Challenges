@@ -55,7 +55,7 @@ exports.getAllCars = async (driveType, transmission, availableAt, capacity) => {
   if (arrQuery.length > 0) {
     query.where = {
       ...query.where,
-      OR: arrQuery,
+      AND: arrQuery,
     };
   }
 
