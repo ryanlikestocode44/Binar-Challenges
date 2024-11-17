@@ -32,7 +32,7 @@ exports.getAllCars = async (driveType, transmission, availableAt, capacity) => {
     arrQuery.push({
       models: {
         transmissions: {
-          name: { contains: name, mode: "insensitive" },
+          name: { contains: transmission, mode: "insensitive" },
         },
       },
     });
